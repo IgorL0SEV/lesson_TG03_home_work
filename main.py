@@ -39,7 +39,8 @@ init_db()
 
 @dp.message(Command('help'))
 async def help(message: Message):
-    await message.answer("Бот уточнит данные студента и сохранит информацию в базе.")
+    await message.answer("/start - Бот уточнит данные студента и сохранит информацию в базе данных.")
+    await message.answer("/list - Бот выведет инфо о студентах их базы данных.")
 
 @dp.message(Command("list"))
 async def list_users(message: Message):
